@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { ChartComponent } from './chart/chart.component';
 import { AppComponent } from './app.component';
 import { ArticleComponent } from './article/article.component';
 import { ArticleListComponent } from './article-list/article-list.component';
@@ -11,7 +11,8 @@ import { ArticleRatingComponent } from './article-rating/article-rating.componen
     AppComponent,
     ArticleComponent,
     ArticleListComponent,
-    ArticleRatingComponent
+    ArticleRatingComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule
