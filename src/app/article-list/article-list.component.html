@@ -1,21 +1,42 @@
-
-<div class="row" *ngFor="let article of articlelist.Articles" (click)="onClick(article)">
-  <div class="col-xs-12 col-sm-2 col-md-2">
-    <img src='{{ article.articleThumbnail }}' alt="Thumbnail" width="75px" height="75px" />
-  </div>
-  <div class="col-xs-12 col-sm-2 col-md-2">
-    {{ article.title }}
-  </div>
-  <div class="col-xs-12 col-sm-2 col-md-2">
-    {{ article.summary }}
-  </div>
-  <div class="col-xs-12 col-sm-2 col-md-2">
-    {{ article.author }}
-  </div>
-  <div class="col-xs-12 col-sm-2 col-md-2">
-    {{ article.publishedDate }}
-  </div>
-  <div class="col-xs-12 col-sm-2 col-md-2">
-    <a href="{{ article.link }}">See More...</a>
+<div class="row" style="border-bottom: 1px solid #000; margin-bottom: 10">
+    <div class="col-xs-12 col-sm-2 col-md-2">
+        <label> Thumbnail </label>
+    </div>
+    <div class="col-xs-12 col-sm-2 col-md-2">
+        <label> Title </label>
+    </div>
+    <div class="col-xs-12 col-sm-2 col-md-2">
+        <label> Summary </label>
+    </div>
+    <div class="col-xs-12 col-sm-2 col-md-2">
+        <label> Author </label>
+    </div>
+    <div class="col-xs-12 col-sm-2 col-md-2">
+    <label> Published Date </label>
+    </div>
+    <div class="col-xs-12 col-sm-2 col-md-2">
+    &nbsp;
+    </div>
+</div>
+<div class="row" *ngFor="let article of articlelist.Articles" (click)="onClick(article)" style="margin-bottom: 10px;">
+  <div style="border-bottom: 1px solid black">
+    <div class="col-xs-12 col-sm-2 col-md-2">
+      <img src='{{ article.articleThumbnail }}' alt="Thumbnail" width="75px" height="75px" style="margin-top: 10px;" />
+    </div>
+    <div class="col-xs-12 col-sm-2 col-md-2">
+      {{ article.title }}
+    </div>
+    <div class="col-xs-12 col-sm-2 col-md-2">
+      {{ article.summary }}
+    </div>
+    <div class="col-xs-12 col-sm-2 col-md-2">
+      {{ article.author }}
+    </div>
+    <div class="col-xs-12 col-sm-2 col-md-2">
+      {{ article.publishedDate }}
+    </div>
+    <div class="col-xs-12 col-sm-2 col-md-2">
+      <a href="{{ article.link }}">See More...</a>
+    </div>
   </div>
 </div>
